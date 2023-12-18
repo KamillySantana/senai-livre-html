@@ -1,0 +1,29 @@
+@media (max-width: 500px) {
+    header .primeiro {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    header .segundo {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    #ofertas {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .desconto {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    #promocoes {
+        display: block;
+    }
+}

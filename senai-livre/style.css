@@ -1,0 +1,541 @@
+:root{
+    --cor--principal: #FFF159;
+    --cor--ofertas: #3682fd;
+    --cor--valor: #2ca469;
+    --cor--valor-parc: #4db68a;
+    --cor--textos:#383838;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.primeiro img{
+    width: 10%;
+   
+}
+
+header{
+    background-color: var(--cor--principal);
+}
+
+.primeiro{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+   
+}
+
+.primeiro nav {
+    padding-right: 30px;
+}
+
+.primeiro nav a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 15px;
+}
+
+.hamburguer {
+    position: absolute;
+    top: 65px;
+    right: 14px;
+    cursor: pointer;
+}
+
+#tres-pontos{
+    display: none;
+}
+
+#tres-pontos:checked ~ .segundo{
+    height: 160px;
+}
+
+.pesquisar{
+    background-color: white;
+    width: 360px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+
+}
+
+.pesquisar input{
+    border: none;
+    outline: none;
+    width: 500px;
+    background-color: transparent;
+}
+
+.pesquisar button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.segundo{
+    display: flex;
+    overflow: auto;
+    height: 0px;
+    padding: 0 15px;
+    transition: all 0.5s;
+   
+}
+
+.segundo div {
+    padding-top: 20px;
+}
+
+.segundo button{
+    background-color: transparent;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0px 38px;
+    opacity: 0.6;
+    transition: 0.6s;
+
+}
+
+.segundo button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.segundo p{
+    margin: 0px 38px;
+}
+
+
+#ofertas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    padding: 15px;
+    margin-left: 15px;
+}
+
+#ofertas div{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 80%;
+}
+
+main h3{
+    padding: 5px;
+    margin: 3px;
+}
+
+#ofertas div button{
+    background-color: var(--cor--ofertas);
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+}
+
+#ofertas div button:hover{
+    cursor: pointer;
+}
+
+#ofertas div .parcela{
+    color: var(--cor--valor-parc);
+}
+
+#ofertas div .preco{
+    font-size: 23px;
+}
+
+#ofertas div .nome{
+    color: black;
+    opacity: 0.6;
+}
+
+.desconto{
+    display: flex;
+    padding: 15px;
+}
+
+.desconto button{
+    background-color: transparent;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0px 20px;
+}
+
+.desconto p{
+    margin: 0px 50px;
+    text-align: center;
+}
+
+#ofertas-do-dia h3{
+    text-align: center;
+}
+
+    /* promoções */
+#promocoes{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    padding: 15px;
+    margin-left: 15px;
+}
+
+#promocoes div{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 80%;
+}
+
+#promocoes div button{
+    background-color: var(--cor--ofertas);
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+}
+
+#promocoes div button:hover{
+    cursor: pointer;
+}
+
+#promocoes div .parcela{
+    color: var(--cor--valor-parc);
+}
+
+#promocoes div .preco{
+    font-size: 23px;
+}
+
+#promocoes div .nome{
+    color: black;
+    opacity: 0.6;
+}
+
+#promocoes div img{
+    width: 100%;
+}
+
+.link-ofertas{
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.link-ofertas a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.link-ofertas a:hover{
+    background-color: rgb(227, 227, 227);
+}
+
+
+    /* footer */
+footer{
+    background-color: var(--cor--principal);
+    background-image: url(img/img/rodape.png);
+    background-repeat: no-repeat;
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 20px;
+}
+
+
+/* registro */
+/* registro */
+#logo img{
+    width: 8%;
+    padding: 10px 0px 0px 15px;
+   
+}
+
+#logo nav a{
+    text-decoration: none;
+    color: var(--cor--textos);
+    padding: 10px 30px;
+    background-color: #eead2d;
+    border: none;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#informacoes-cadastro h1{
+    text-align: center;
+    padding: 15px;
+}
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.container button{
+    background-color: #eead2d;
+    color: var(--cor--textos);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.container button:hover{
+    background-color: var(--cor--principal);
+}
+
+
+/* login */
+/* login */
+#form h1{
+    text-align: center;
+    padding: 15px;
+}
+
+#form-formulario {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#form-formulario label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#form-formulario input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+#form-formulario button{
+    background-color: #eead2d;
+    color: var(--cor--textos);
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#form-formulario button:hover{
+    background-color: var(--cor--principal);
+}
+
+/* contatos */
+/* contatos */
+#sessao-contatos h1{
+    text-align: center;
+    padding: 15px;
+    font-size: 2em;
+}
+
+#contate-nos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 25px;
+}
+
+#contate-nos .cinza{
+    opacity: 0.6;
+}
+
+#batata{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 60px 0px 0px 0px;
+}
+
+#batata i{
+    font-size: 50px;
+    color: black;
+}
+
+#batata i:hover{
+    opacity: 0.5;
+}
+
+#batata .textinho{
+    padding: 10px;
+}
+
+/* ofertas-do-dia */
+/* Ofertas do dia */
+#ofertas-ofertas {
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#ofertas-ofertas div {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 120px;
+    padding: 10px;
+}
+
+#ofertas-ofertas div button {
+    background-color: var(--cor--ofertas);
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 5px;
+    width: 100%;
+}
+
+#ofertas-ofertas div button:hover{
+    cursor: pointer;
+}
+
+#ofertas-ofertas div .parcela{
+    color: var(--cor--valor-parc);
+    font-size: 0.8em;
+}
+
+#ofertas-ofertas div .preco{
+    font-size: 23px;
+}
+
+#ofertas-ofertas div .nome{
+    color: black;
+    opacity: 0.6;
+} 
+
+.imagemtop{
+    width: 120px;
+    height: 90px;
+}
+
+#paises {
+    width: 420px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.fundo{
+    animation-name: banner;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    transition: all 0.5s;
+    width: 100%;
+    height: 450px;
+    background-position: center;
+    padding: 0px;
+    opacity: 0.7;
+}
+
+@keyframes banner {
+    0% {
+        background-image: url(img/img/mustangoutro.png);
+    }
+    20% {
+        background-image: url(img/img/tesla)
+    }
+    40% {
+        background-image: url(img/img/carrosesportivos);
+    }
+    60% {
+        background-image: url(img/img/carro);
+    }
+    80% {
+        background-image: url(img/img/golf.jpg);
+    }
+    100% {
+        background-image: url(img/img/audir8.jpg);
+    }
+}
+
+#carrinhos h1{
+    text-align: center;
+    background-color: #FFF159;
+    padding: 10px;
+}
+
+.presentear h3{
+    text-align:left;
+    padding: 20px;
+    color: black;
+    background-color: var(--cor--principal);
+    margin: 10px;
+}
+
+.desbicicleta h4{
+    text-align:left;
+    padding: 20px;
+    color: black;
+    background-color: var(--cor--principal);
+    margin: 10px;
+
+}
+
+.desconto-bicicleta{
+    padding: 20px;
+}
+
+.bici{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 60px;
+    margin-left: 30px;
+}
+
+.bici div{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+}
